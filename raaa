@@ -1,16 +1,3 @@
---// Initialize
-if not game:IsLoaded() then
-    game.Loaded:Wait()
-end
-
-print("=")
-  
-  if (not LPH_OBFUSCATED) then
-      getfenv().LPH_NO_VIRTUALIZE = function(f) return f end;
-      LPH_JIT_MAX = function(...) return (...) end;
-      LPH_JIT_ULTRA = function(...) return (...) end;
-  end
-
 local Library = {};
 local Font_Old = Enum.Font.GothamBold
 local Path = game:GetService("RunService"):IsStudio() and game.Players.LocalPlayer.PlayerGui or game.CoreGui
